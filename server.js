@@ -20,11 +20,11 @@ const db = knex({
 
 const app = express();
 
-app.use(bodyParser.json());
 app.use(cors());
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-	res.send('Smart-Brain is Working!');
+	res.send('Smart-Brain is Working!')
 });
 
 app.post('/signin', (req, res) => { signin.handleSignIn(req, res, db, bcrypt) });
