@@ -22,7 +22,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-	res.send('Smart-Brain is Working!')
+	res.send('Smart-Brain is Online!')
 });
 
 app.post('/signin', (req, res) => { signin.handleSignIn(req, res, db, bcrypt) });
